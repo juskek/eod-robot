@@ -66,4 +66,5 @@ Improvements for future work:
                
                
 ## Program Flow Chart
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/juskek/eod-robot/blob/main/flowchart_main.png?raw=true)
+
