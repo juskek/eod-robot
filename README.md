@@ -26,7 +26,6 @@ Description: The given objective was to design code to drive a vehicle
              then collect information from a radio-frequency identification
              (RFID) card and display it upon returning to its initial 
              position. 
-
              The vehicle consists of two IR sensors, one RFID sensor, and
              a liquid crystal display (LCD) screen. The IR sensors are 
              front facing and positioned side by side in the middle. Each 
@@ -36,6 +35,8 @@ Description: The given objective was to design code to drive a vehicle
              match the length of the isolation tubes. 
              The IR and RFID sensors are held together by a 3D printed 
              housing made from polylactide (PLA).
+
+
 
 Input: IR sensor signal, RFID signal
 Output: RFID information on LCD screen
@@ -56,6 +57,8 @@ Improvements for future work:
    - Solution: Write new function delay_ms() which incorporates a 
                conditional while loop to delay only when RFID is not 
                not retrieved. For example:
+               
+               '''c
                delay_ms(&G_rfid_retrieved, &G_time_ms, 400);
                void delay_ms(unsigned char *flag, unsigned int *time_ms, 
                   unsigned int delay) 
@@ -63,20 +66,20 @@ Improvements for future work:
                  *time_ms = 0; // reset timer
                  while ((*flag == 0) | (*time_ms < delay));
                }
+               '''
                
                
 ## Program Flowchart
 
 ### Main Flowchart
-![alt text](https://github.com/juskek/eod-robot/blob/main/flowchart_main.png?raw=true)
-
+<img src="https://github.com/juskek/eod-robot/blob/main/flowchart_main.png?raw=true" width="500">
 
 ### Initial Centering Flowchart
 Method by which the robot locates and determines the general direction of the explosive device.
-![alt text](https://github.com/juskek/eod-robot/blob/main/flowchart_centering.png?raw=true)
+<img src="https://github.com/juskek/eod-robot/blob/main/flowchart_centering.png?raw=true" width="500">
 
 
 ### Steering Flowchart
 Method by which the robot navigates to the explosive device after the initial direction is found. 
-![alt text](https://github.com/juskek/eod-robot/blob/main/flowchart_steering.png?raw=true)
+<img src="https://github.com/juskek/eod-robot/blob/main/flowchart_steering.png?raw=true" width="500">
 
