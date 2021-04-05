@@ -1,0 +1,1423 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+intcodelo CODE 0 18 18 2E 1
+cinit CODE 0 1E0A 1E0A 22 1
+intcode_body CODE 0 11C4 11C4 E6 1
+text0 CODE 0 35E 35E 708 1
+text1 CODE 0 D0A D0A 168 1
+text2 CODE 0 152E 152E C2 1
+text3 CODE 0 15F0 15F0 C2 1
+text4 CODE 0 A66 A66 2A4 1
+text5 CODE 0 17EE 17EE 8C 1
+text6 CODE 0 187A 187A 8C 1
+text7 CODE 0 1A7A 1A7A 6C 1
+text8 CODE 0 1D3C 1D3C 30 1
+text9 CODE 0 175C 175C 92 1
+text10 CODE 0 1B46 1B46 56 1
+text11 CODE 0 1388 1388 D8 1
+text12 CODE 0 1AE6 1AE6 60 1
+text13 CODE 0 1C44 1C44 42 1
+text14 CODE 0 1BF2 1BF2 52 1
+text15 CODE 0 1460 1460 CE 1
+text16 CODE 0 E72 E72 134 1
+text17 CODE 0 1D9C 1D9C 26 1
+text18 CODE 0 1906 1906 84 1
+text19 CODE 0 1C86 1C86 40 1
+text20 CODE 0 FA6 FA6 12A 1
+text21 CODE 0 1CC6 1CC6 3E 1
+text22 CODE 0 10D0 10D0 F4 1
+text23 CODE 0 1E9C 1E9C 18 1
+text24 CODE 0 1E2C 1E2C 22 1
+text25 CODE 0 16B2 16B2 AA 1
+text26 CODE 0 1D04 1D04 38 1
+text27 CODE 0 1ED0 1ED0 C 1
+text28 CODE 0 1E4E 1E4E 1A 1
+text29 CODE 0 1EDC 1EDC A 1
+text30 CODE 0 1E68 1E68 1A 1
+text31 CODE 0 1DC2 1DC2 24 1
+text32 CODE 0 198A 198A 78 1
+text33 CODE 0 1EB4 1EB4 E 1
+text36 CODE 0 1D6C 1D6C 30 1
+text37 CODE 0 1B9C 1B9C 56 1
+text38 CODE 0 1E82 1E82 1A 1
+text39 CODE 0 1DE6 1DE6 24 1
+text40 CODE 0 1A02 1A02 78 1
+text41 CODE 0 1EC2 1EC2 E 1
+text42 CODE 0 12AA 12AA DE 1
+text43 CODE 0 1EE6 1EE6 8 1
+cstackCOMRAM COMRAM 1 1 1 38 1
+cstackBANK0 BANK0 1 60 60 27 1
+cstackBANK1 BANK1 1 100 100 FC 1
+temp COMRAM 1 4A 4A 1 1
+bssBANK0 BANK0 1 87 87 3 1
+intcode CODE 0 8 8 6 1
+smallconst SMALLCONST 0 300 300 5E 1
+bssCOMRAM COMRAM 1 39 39 11 1
+$C:\Users\SHL4917\AppData\Local\Temp\sh9k.o
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 46 46 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 8A-FF 1
+RAM 1FC-2FF 1
+SFR F60-FFF 1
+BANK0 8A-FF 1
+BANK1 1FC-1FF 1
+BANK2 200-2FF 1
+CONST 4-7 1
+CONST E-17 1
+CONST 4A-2FF 1
+CONST 1EEE-1FFF 1
+STACK 1FC-2FF 1
+SMALLCONST 1EEE-1FFF 1
+CODE 4-7 1
+CODE E-17 1
+CODE 4A-2FF 1
+CODE 1EEE-1FFF 1
+BIGRAM 4B-5F 1
+BIGRAM 8A-FF 1
+BIGRAM 1FC-2FF 1
+COMRAM 4B-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 1EEE-1FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+18 intcodelo CODE >54:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+18 intcodelo CODE >134:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+26 intcodelo CODE >135:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+2A intcodelo CODE >136:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+30 intcodelo CODE >137:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+34 intcodelo CODE >138:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+36 intcodelo CODE >139:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+36 intcodelo CODE >140:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+8 intcode CODE >95:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+8 intcode CODE >140:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+1EE6 text43 CODE >177:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1EE6 text43 CODE >178:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1EEA text43 CODE >179:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+12AA text42 CODE >197:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+12AA text42 CODE >198:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+12AE text42 CODE >199:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+12C4 text42 CODE >201:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+12DC text42 CODE >202:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+12F0 text42 CODE >203:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+12F2 text42 CODE >204:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1308 text42 CODE >206:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1326 text42 CODE >207:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+133A text42 CODE >208:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+133E text42 CODE >209:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1360 text42 CODE >212:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1368 text42 CODE >213:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1368 text42 CODE >214:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+136A text42 CODE >203:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+136A text42 CODE >216:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1372 text42 CODE >217:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1372 text42 CODE >218:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1EC2 text41 CODE >50:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1EC2 text41 CODE >51:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1EC4 text41 CODE >52:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1ECC text41 CODE >53:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1ECE text41 CODE >54:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1A02 text40 CODE >69:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1A04 text40 CODE >72:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1A18 text40 CODE >73:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1A32 text40 CODE >74:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1A4C text40 CODE >75:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1A6C text40 CODE >76:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1A70 text40 CODE >77:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1A78 text40 CODE >79:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1DE6 text39 CODE >97:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1DE8 text39 CODE >100:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1DF2 text39 CODE >102:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1DFA text39 CODE >103:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1E02 text39 CODE >105:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1E08 text39 CODE >106:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1E82 text38 CODE >121:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1E82 text38 CODE >122:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1E8C text38 CODE >123:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1E9A text38 CODE >124:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1B9C text37 CODE >224:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1B9C text37 CODE >226:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1B9E text37 CODE >229:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1BCA text37 CODE >226:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1BCA text37 CODE >230:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1D6C text36 CODE >200:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1D6E text36 CODE >203:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1D74 text36 CODE >204:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1D7E text36 CODE >205:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1D88 text36 CODE >206:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1D92 text36 CODE >207:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1D92 text36 CODE >208:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1D9A text36 CODE >209:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+11C4 intcode_body CODE >95:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+11EC intcode_body CODE >99:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+11F0 intcode_body CODE >100:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+11FC intcode_body CODE >101:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+1202 intcode_body CODE >102:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+1202 intcode_body CODE >107:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+1204 intcode_body CODE >108:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+1208 intcode_body CODE >109:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+120C intcode_body CODE >110:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+1212 intcode_body CODE >112:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+1216 intcode_body CODE >113:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+121A intcode_body CODE >114:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+1220 intcode_body CODE >115:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+122C intcode_body CODE >116:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+1244 intcode_body CODE >117:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+124A intcode_body CODE >119:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+124E intcode_body CODE >120:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+1252 intcode_body CODE >121:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+1258 intcode_body CODE >122:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+1264 intcode_body CODE >123:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+127C intcode_body CODE >124:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+127C intcode_body CODE >126:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+127E intcode_body CODE >127:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+127E intcode_body CODE >130:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+1EB4 text33 CODE >50:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1EB4 text33 CODE >51:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1EB6 text33 CODE >52:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1EBE text33 CODE >53:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1EC0 text33 CODE >54:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+198A text32 CODE >69:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+198C text32 CODE >72:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+19A0 text32 CODE >73:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+19BA text32 CODE >74:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+19D4 text32 CODE >75:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+19F4 text32 CODE >76:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+19F8 text32 CODE >77:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1A00 text32 CODE >79:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1DC2 text31 CODE >97:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1DC4 text31 CODE >100:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1DCE text31 CODE >102:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1DD6 text31 CODE >103:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1DDE text31 CODE >105:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1DE4 text31 CODE >106:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1E68 text30 CODE >121:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1E68 text30 CODE >122:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1E72 text30 CODE >123:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1E80 text30 CODE >124:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1EDC text29 CODE >401:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1EDC text29 CODE >402:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1EE0 text29 CODE >403:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1EE2 text29 CODE >404:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1EE4 text29 CODE >405:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1E4E text28 CODE >378:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1E4E text28 CODE >379:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1E50 text28 CODE >380:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1E52 text28 CODE >381:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1E54 text28 CODE >382:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1E56 text28 CODE >383:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1E58 text28 CODE >384:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1E60 text28 CODE >385:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1E62 text28 CODE >386:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1E66 text28 CODE >387:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1ED0 text27 CODE >234:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1ED0 text27 CODE >235:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1ED2 text27 CODE >236:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1ED4 text27 CODE >237:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1ED6 text27 CODE >238:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1ED8 text27 CODE >239:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1EDA text27 CODE >241:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D04 text26 CODE >257:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D04 text26 CODE >258:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D08 text26 CODE >259:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D0C text26 CODE >260:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D10 text26 CODE >261:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D12 text26 CODE >262:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D14 text26 CODE >263:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D1C text26 CODE >264:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D24 text26 CODE >267:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D26 text26 CODE >268:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D2E text26 CODE >269:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D30 text26 CODE >270:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D32 text26 CODE >271:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D34 text26 CODE >272:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D36 text26 CODE >273:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D38 text26 CODE >274:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D3A text26 CODE >275:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+16B2 text25 CODE >139:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16B2 text25 CODE >142:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16B4 text25 CODE >143:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16B6 text25 CODE >144:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16B8 text25 CODE >145:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16BA text25 CODE >146:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16BC text25 CODE >147:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16BE text25 CODE >150:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16C2 text25 CODE >151:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16C6 text25 CODE >152:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16CA text25 CODE >153:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16CC text25 CODE >154:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16CE text25 CODE >155:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16D0 text25 CODE >156:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16D2 text25 CODE >157:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16D4 text25 CODE >158:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16D6 text25 CODE >161:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16DC text25 CODE >163:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16E2 text25 CODE >164:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16EA text25 CODE >166:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16F0 text25 CODE >167:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16F8 text25 CODE >169:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+16FE text25 CODE >170:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1706 text25 CODE >172:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+170C text25 CODE >174:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1716 text25 CODE >175:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+171E text25 CODE >177:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1728 text25 CODE >178:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1736 text25 CODE >180:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1740 text25 CODE >181:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1748 text25 CODE >183:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1752 text25 CODE >184:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+175A text25 CODE >185:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1E2C text24 CODE >47:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1E2C text24 CODE >50:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1E2E text24 CODE >51:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1E30 text24 CODE >53:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1E32 text24 CODE >54:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1E34 text24 CODE >57:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1E38 text24 CODE >58:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1E3C text24 CODE >59:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1E40 text24 CODE >60:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1E44 text24 CODE >66:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1E48 text24 CODE >67:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1E4C text24 CODE >68:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1E9C text23 CODE >120:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1E9C text23 CODE >122:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1E9E text23 CODE >123:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1EA0 text23 CODE >125:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1EA4 text23 CODE >126:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1EA8 text23 CODE >127:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1EAA text23 CODE >128:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1EAC text23 CODE >129:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1EAE text23 CODE >130:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1EB0 text23 CODE >131:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1EB2 text23 CODE >132:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+10D0 text22 CODE >425:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+10D0 text22 CODE >427:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+10F0 text22 CODE >429:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1138 text22 CODE >430:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1148 text22 CODE >431:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+116A text22 CODE >433:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+11B2 text22 CODE >434:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+11C2 text22 CODE >435:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1CC6 text21 CODE >290:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1CC8 text21 CODE >293:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1CD0 text21 CODE >294:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1CD6 text21 CODE >295:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1CDC text21 CODE >296:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1CE0 text21 CODE >297:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1CE8 text21 CODE >298:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1CF0 text21 CODE >299:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1CF6 text21 CODE >300:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1CFA text21 CODE >301:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D02 text21 CODE >302:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+FA6 text20 CODE >325:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+FA8 text20 CODE >326:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+FAC text20 CODE >328:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+FB4 text20 CODE >329:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+FB8 text20 CODE >330:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+FBA text20 CODE >331:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+FD8 text20 CODE >334:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+FDE text20 CODE >336:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1024 text20 CODE >337:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1028 text20 CODE >338:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1028 text20 CODE >340:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+103E text20 CODE >341:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1040 text20 CODE >330:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1040 text20 CODE >342:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1046 text20 CODE >343:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+104C text20 CODE >348:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1068 text20 CODE >349:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1082 text20 CODE >350:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1082 text20 CODE >351:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+108C text20 CODE >353:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+108C text20 CODE >355:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1090 text20 CODE >356:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1092 text20 CODE >357:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+10BE text20 CODE >358:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+10C0 text20 CODE >356:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+10C0 text20 CODE >359:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+10C6 text20 CODE >361:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+10CE text20 CODE >363:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1C86 text19 CODE >156:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1C88 text19 CODE >158:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1C94 text19 CODE >159:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1C9C text19 CODE >160:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1CA6 text19 CODE >161:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1CB4 text19 CODE >162:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1906 text18 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+1906 text18 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+190A text18 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+190E text18 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+1916 text18 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+191A text18 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+191A text18 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+191E text18 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+1926 text18 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+192A text18 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+192A text18 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+1932 text18 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+193A text18 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+193E text18 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+1940 text18 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+1946 text18 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+1948 text18 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+1948 text18 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+194C text18 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+1952 text18 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+195E text18 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+1966 text18 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+1968 text18 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+1968 text18 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+196E text18 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+1972 text18 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+1978 text18 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+1980 text18 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\awdiv.c
+1D9C text17 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul16.c
+1D9C text17 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul16.c
+1DA8 text17 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul16.c
+1DB0 text17 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul16.c
+1DB8 text17 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul16.c
+E72 text16 CODE >84:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+E72 text16 CODE >88:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+EB8 text16 CODE >90:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+ECA text16 CODE >94:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+EF0 text16 CODE >95:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+F20 text16 CODE >96:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+F22 text16 CODE >99:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+F4A text16 CODE >100:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+F4A text16 CODE >103:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+F6E text16 CODE >104:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+FA4 text16 CODE >105:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1460 text15 CODE >127:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1460 text15 CODE >129:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1470 text15 CODE >130:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1480 text15 CODE >132:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1498 text15 CODE >134:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+14AA text15 CODE >135:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+14C2 text15 CODE >137:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+14D6 text15 CODE >141:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+14D8 text15 CODE >142:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+14EC text15 CODE >143:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+14F8 text15 CODE >144:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1504 text15 CODE >145:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1514 text15 CODE >146:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1BF2 text14 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1BF2 text14 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1BFA text14 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1C02 text14 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1C06 text14 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1C08 text14 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1C0E text14 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1C10 text14 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1C10 text14 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1C14 text14 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1C1A text14 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1C26 text14 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1C2E text14 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1C30 text14 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1C30 text14 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1C36 text14 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1C3A text14 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1C42 text14 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwdiv.c
+1C44 text13 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwmod.c
+1C44 text13 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwmod.c
+1C4C text13 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwmod.c
+1C50 text13 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwmod.c
+1C52 text13 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwmod.c
+1C58 text13 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwmod.c
+1C5A text13 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwmod.c
+1C5A text13 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwmod.c
+1C5E text13 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwmod.c
+1C6A text13 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwmod.c
+1C72 text13 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwmod.c
+1C78 text13 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwmod.c
+1C7C text13 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwmod.c
+1C84 text13 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\lwmod.c
+1AE6 text12 CODE >52:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1AE6 text12 CODE >53:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1AEA text12 CODE >54:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1AF2 text12 CODE >55:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1AF4 text12 CODE >56:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1B10 text12 CODE >57:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1B12 text12 CODE >55:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1B12 text12 CODE >58:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1B2C text12 CODE >59:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1B34 text12 CODE >60:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1B3C text12 CODE >61:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1B3C text12 CODE >62:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1388 text11 CODE >83:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1388 text11 CODE >84:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+138C text11 CODE >85:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+138E text11 CODE >86:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+13A2 text11 CODE >87:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+13A4 text11 CODE >85:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+13A4 text11 CODE >88:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+13AA text11 CODE >89:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+13B2 text11 CODE >90:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+13BA text11 CODE >91:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+13BE text11 CODE >92:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+13C2 text11 CODE >93:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+13C4 text11 CODE >94:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+13F2 text11 CODE >95:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1420 text11 CODE >96:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1436 text11 CODE >97:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+143E text11 CODE >98:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1440 text11 CODE >99:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1442 text11 CODE >93:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1442 text11 CODE >100:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1448 text11 CODE >101:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+145E text11 CODE >102:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1B46 text10 CODE >224:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1B46 text10 CODE >226:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1B48 text10 CODE >229:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1B74 text10 CODE >226:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1B74 text10 CODE >230:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+175C text9 CODE >451:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+175C text9 CODE >454:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1768 text9 CODE >455:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+178A text9 CODE >456:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+179C text9 CODE >458:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+17A8 text9 CODE >461:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+17B4 text9 CODE >462:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+17DA text9 CODE >463:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+17EC text9 CODE >464:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+1D3C text8 CODE >200:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1D3E text8 CODE >203:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1D44 text8 CODE >204:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1D4E text8 CODE >205:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1D58 text8 CODE >206:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1D62 text8 CODE >207:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1D62 text8 CODE >208:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1D6A text8 CODE >209:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\lcd_funct.c
+1A7A text7 CODE >252:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1A7A text7 CODE >254:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1A8E text7 CODE >256:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1A90 text7 CODE >258:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1AA4 text7 CODE >259:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1AB0 text7 CODE >260:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1ABC text7 CODE >261:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1ACC text7 CODE >262:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+187A text6 CODE >287:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+187A text6 CODE >288:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+188E text6 CODE >289:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+189E text6 CODE >290:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+18AE text6 CODE >291:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+18B0 text6 CODE >293:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+18C4 text6 CODE >294:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+18D0 text6 CODE >295:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+18DC text6 CODE >296:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+18EC text6 CODE >297:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+17EE text5 CODE >322:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+17EE text5 CODE >323:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1802 text5 CODE >324:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1812 text5 CODE >325:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1822 text5 CODE >326:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1824 text5 CODE >328:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1838 text5 CODE >329:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1844 text5 CODE >330:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1850 text5 CODE >331:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1860 text5 CODE >332:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+A66 text4 CODE >507:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+A66 text4 CODE >510:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+A8C text4 CODE >512:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+A98 text4 CODE >513:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+AAC text4 CODE >514:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+AB2 text4 CODE >515:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+AC6 text4 CODE >516:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+AEE text4 CODE >517:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+AFA text4 CODE >519:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+B0E text4 CODE >520:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+B22 text4 CODE >521:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+B32 text4 CODE >522:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+B46 text4 CODE >523:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+B48 text4 CODE >524:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+B5C text4 CODE >525:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+B6C text4 CODE >526:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+B80 text4 CODE >528:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+BEC text4 CODE >531:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+BF2 text4 CODE >532:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+BFE text4 CODE >533:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+C16 text4 CODE >534:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+C1C text4 CODE >535:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+C28 text4 CODE >536:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+C2E text4 CODE >537:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+C42 text4 CODE >538:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+C54 text4 CODE >539:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+C56 text4 CODE >542:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+C68 text4 CODE >543:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+C74 text4 CODE >545:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+C88 text4 CODE >546:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+C9A text4 CODE >547:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+CAE text4 CODE >548:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+CAE text4 CODE >549:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+CC2 text4 CODE >550:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+CCE text4 CODE >552:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+CE2 text4 CODE >553:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+CF4 text4 CODE >554:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+D08 text4 CODE >556:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+15F0 text3 CODE >174:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+15F0 text3 CODE >176:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1600 text3 CODE >177:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1610 text3 CODE >179:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1624 text3 CODE >181:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1630 text3 CODE >182:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+163C text3 CODE >184:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+163E text3 CODE >186:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+164A text3 CODE >187:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1656 text3 CODE >188:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1666 text3 CODE >189:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+152E text2 CODE >217:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+152E text2 CODE >219:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+153E text2 CODE >220:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+154E text2 CODE >222:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1562 text2 CODE >224:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+156E text2 CODE >225:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+157A text2 CODE >227:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+157C text2 CODE >229:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1588 text2 CODE >230:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+1594 text2 CODE >231:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+15A4 text2 CODE >232:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\dc_motor_funct.c
+D0A text1 CODE >583:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+D0A text1 CODE >584:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+D42 text1 CODE >587:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+D6E text1 CODE >588:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+D7A text1 CODE >589:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+D92 text1 CODE >591:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+DCC text1 CODE >594:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+DF8 text1 CODE >595:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+E04 text1 CODE >596:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+E1C text1 CODE >598:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+E1E text1 CODE >601:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+E4C text1 CODE >602:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+E58 text1 CODE >603:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+E70 text1 CODE >605:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\functions.c
+35E text0 CODE >144:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+35E text0 CODE >146:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+362 text0 CODE >147:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+366 text0 CODE >151:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+36A text0 CODE >152:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+36E text0 CODE >153:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+372 text0 CODE >154:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+376 text0 CODE >155:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+37A text0 CODE >156:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+386 text0 CODE >157:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+38A text0 CODE >158:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+38E text0 CODE >161:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+392 text0 CODE >170:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+398 text0 CODE >171:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+39C text0 CODE >173:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+3A4 text0 CODE >174:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+3AC text0 CODE >175:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+3B0 text0 CODE >176:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+3B8 text0 CODE >178:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+3BC text0 CODE >179:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+3C0 text0 CODE >180:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+3C8 text0 CODE >181:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+3D0 text0 CODE >182:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+3D4 text0 CODE >183:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+3DC text0 CODE >185:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+3E6 text0 CODE >186:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+3EE text0 CODE >187:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+3F6 text0 CODE >188:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+3FA text0 CODE >191:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+3FE text0 CODE >192:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+406 text0 CODE >193:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+40E text0 CODE >194:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+416 text0 CODE >196:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+41A text0 CODE >197:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+41E text0 CODE >202:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+424 text0 CODE >205:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+428 text0 CODE >206:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+42E text0 CODE >207:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+43A text0 CODE >208:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+454 text0 CODE >225:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+456 text0 CODE >227:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+45C text0 CODE >228:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+462 text0 CODE >229:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+46C text0 CODE >232:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+474 text0 CODE >233:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+488 text0 CODE >234:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+48A text0 CODE >235:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+492 text0 CODE >237:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+4A6 text0 CODE >240:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+4AA text0 CODE >241:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+4B0 text0 CODE >242:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+4BC text0 CODE >243:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+4D6 text0 CODE >246:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+4DE text0 CODE >247:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+4FA text0 CODE >248:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+4FC text0 CODE >249:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+506 text0 CODE >253:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+506 text0 CODE >254:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+510 text0 CODE >255:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+518 text0 CODE >258:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+526 text0 CODE >259:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+534 text0 CODE >265:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+53A text0 CODE >266:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+548 text0 CODE >267:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+560 text0 CODE >253:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+560 text0 CODE >268:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+566 text0 CODE >271:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+56C text0 CODE >225:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+574 text0 CODE >298:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+574 text0 CODE >300:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+578 text0 CODE >301:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+57E text0 CODE >302:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+58A text0 CODE >303:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+5A4 text0 CODE >306:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+5AA text0 CODE >307:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+5B0 text0 CODE >308:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+5BA text0 CODE >313:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+5C0 text0 CODE >319:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+5C2 text0 CODE >321:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+5C6 text0 CODE >322:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+5CC text0 CODE >323:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+5D8 text0 CODE >324:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+5DE text0 CODE >336:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+5E0 text0 CODE >338:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+5EE text0 CODE >339:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+5FC text0 CODE >341:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+600 text0 CODE >342:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+606 text0 CODE >343:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+614 text0 CODE >346:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+61A text0 CODE >347:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+626 text0 CODE >350:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+642 text0 CODE >353:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+660 text0 CODE >354:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+67A text0 CODE >336:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+67A text0 CODE >355:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+68A text0 CODE >367:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+68A text0 CODE >370:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+698 text0 CODE >371:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+6A6 text0 CODE >373:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+6AA text0 CODE >374:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+6B0 text0 CODE >375:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+6BE text0 CODE >378:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+6C4 text0 CODE >379:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+6D0 text0 CODE >382:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+6EC text0 CODE >385:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+6FE text0 CODE >386:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+70A text0 CODE >389:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+728 text0 CODE >390:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+740 text0 CODE >392:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+744 text0 CODE >367:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+744 text0 CODE >393:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+758 text0 CODE >319:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+766 text0 CODE >406:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+772 text0 CODE >408:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+786 text0 CODE >409:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+7A0 text0 CODE >412:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+7A4 text0 CODE >413:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+7AA text0 CODE >414:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+7B6 text0 CODE >417:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+7B8 text0 CODE >419:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+7BC text0 CODE >420:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+7C2 text0 CODE >421:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+7CE text0 CODE >424:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+7D4 text0 CODE >425:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+7E6 text0 CODE >426:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+7F2 text0 CODE >429:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+812 text0 CODE >431:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+81E text0 CODE >432:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+836 text0 CODE >433:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+85A text0 CODE >435:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+866 text0 CODE >436:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+87E text0 CODE >437:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+8A2 text0 CODE >439:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+8AE text0 CODE >440:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+8C6 text0 CODE >441:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+8C6 text0 CODE >442:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+8DE text0 CODE >443:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+8E2 text0 CODE >417:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+8E2 text0 CODE >444:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+8F0 text0 CODE >447:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+904 text0 CODE >448:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+908 text0 CODE >449:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+920 text0 CODE >450:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+926 text0 CODE >451:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+93A text0 CODE >454:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+93E text0 CODE >455:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+944 text0 CODE >456:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+950 text0 CODE >457:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+956 text0 CODE >460:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+95E text0 CODE >461:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+9A8 text0 CODE >463:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+9BE text0 CODE >464:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+9BE text0 CODE >465:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+9C8 text0 CODE >468:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+9D0 text0 CODE >469:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+9D6 text0 CODE >470:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+9DC text0 CODE >471:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+9E2 text0 CODE >472:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+9E8 text0 CODE >475:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+9EC text0 CODE >476:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+9EE text0 CODE >477:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+A04 text0 CODE >478:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+A06 text0 CODE >476:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+A06 text0 CODE >479:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+A0C text0 CODE >484:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+A16 text0 CODE >486:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+A1C text0 CODE >487:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+A28 text0 CODE >490:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+A2C text0 CODE >491:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+A30 text0 CODE >494:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+A36 text0 CODE >495:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+A42 text0 CODE >497:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+A4A text0 CODE >498:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+A4A text0 CODE >500:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+A50 text0 CODE >501:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+A5C text0 CODE >298:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+A5C text0 CODE >502:H:\ECM\MAIN_PROJ_v15_TRACKING_WORKING.X\main.c
+1E0A cinit CODE >1876:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E0A cinit CODE >1878:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E0A cinit CODE >1881:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E0A cinit CODE >1905:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E0C cinit CODE >1906:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E0E cinit CODE >1907:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E10 cinit CODE >1908:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E12 cinit CODE >1911:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E16 cinit CODE >1912:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E18 cinit CODE >1913:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E18 cinit CODE >1914:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E1A cinit CODE >1915:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E1C cinit CODE >1916:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E1E cinit CODE >1922:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E1E cinit CODE >1924:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E20 cinit CODE >1925:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E22 cinit CODE >1927:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E24 cinit CODE >1928:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E26 cinit CODE >1929:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+1E28 cinit CODE >1930:C:\Users\SHL4917\AppData\Local\Temp\sh9k.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__size_of_veer_left 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___awdiv@counter 20 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___lwmod@counter 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+stop_all@mL 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+stop_all@mR 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hspace_0 30000E 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hspace_1 1FC 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_lcd_out 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_init_lcd 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_init_pwm 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_PWMCON0 F6F 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_PWMCON1 F6E 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\SHL4917\AppData\Local\Temp\sh9k.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_veer_left 15F0 0 CODE 0 text3 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+main@j 74 0 BANK0 1 cstackBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+delay_s@i 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lsmallconst 300 0 SMALLCONST 0 smallconst dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+itoa_5@remainder 31 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_LATB F8A 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_LATC F8B 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_PR5H F91 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_PR5L F90 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\SHL4917\AppData\Local\Temp\sh9k.o
+_main 35E 0 CODE 0 text0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+btemp 4A 0 COMRAM 1 temp dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_veer_right 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+start 46 0 CODE 0 init C:\Users\SHL4917\AppData\Local\Temp\sh9k.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__CFG_WDTEN$OFF 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+?___wmul 16 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+veer_left@mL 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+veer_left@mR 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_init_serial 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_set_motor_pwm 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_lcd_string 1B46 0 CODE 0 text10 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+i2set_line@line 5 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_stop_all 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_turn_right 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hpowerup 46 0 CODE 0 powerup dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_hp_rfid 12AA 0 CODE 0 intcode_body dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_ir_display 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_T0CONbits FD5 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+ttemp5 4B 0 COMRAM 1 temp dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+ttemp6 4E 0 COMRAM 1 temp dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+ttemp7 52 0 COMRAM 1 temp dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\SHL4917\AppData\Local\Temp\sh9k.o
+intlevel0 0 0 CODE 0 text C:\Users\SHL4917\AppData\Local\Temp\sh9k.o
+intlevel1 0 0 CODE 0 text C:\Users\SHL4917\AppData\Local\Temp\sh9k.o
+intlevel2 0 0 CODE 0 text C:\Users\SHL4917\AppData\Local\Temp\sh9k.o
+intlevel3 0 0 CODE 0 text C:\Users\SHL4917\AppData\Local\Temp\sh9k.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+delay_s@cycles 18 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_init_lcd 16B2 0 CODE 0 text25 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_init_pwm 1E2C 0 CODE 0 text24 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_OSCCONbits FD3 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+wtemp8 4B 0 COMRAM 1 temp dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+?_get_ir 16 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_ir_filter 10D0 0 CODE 0 text20 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+i2_send_lcd 1DE6 0 CODE 0 text39 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___awdiv@sign 21 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_init_lcd 175C 0 CODE 0 text25 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_init_pwm 1E4E 0 CODE 0 text24 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_set_motor_pwm FA6 0 CODE 0 text16 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_ir_filter 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_delay_s 1C86 0 CODE 0 text19 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___wmul@multiplicand 18 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_init_counter 1E4E 0 CODE 0 text28 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_ir_difference 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_ANSEL0 FB8 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+ir_filter@array 28 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_lcd_out 1A02 0 CODE 0 text32 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___awdiv@dividend 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\SHL4917\AppData\Local\Temp\sh9k.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\SHL4917\AppData\Local\Temp\sh9k.o
+__size_of_init_ir 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of___wmul 1DC2 0 CODE 0 text17 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_ir_filter FA6 0 CODE 0 text20 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+i2_set_line 1D6C 0 CODE 0 text36 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+lcd_string@string 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_stop_all 1A7A 0 CODE 0 text7 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_lcd_string 1B9C 0 CODE 0 text10 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_BAUDCONbits FAA 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+delay_s@seconds 17 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hintcodelo 46 0 CODE 0 intcodelo dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___awdiv@divisor 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___lwmod@divisor 28 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of___awdiv 198A 0 CODE 0 text18 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of___lwdiv 1C44 0 CODE 0 text14 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of___lwmod 1C86 0 CODE 0 text13 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_stop_all 1AE6 0 CODE 0 text7 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_DFLTCON F60 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+i2lcd_out@number 2 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_ir_difference 11C4 0 CODE 0 text22 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+power@power 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+init_pwm@PWMperiod 16 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_init_button 1EDC 0 CODE 0 text29 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_init_interrupt 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_init_counter 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+veer_right@direction 31 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___lwdiv@quotient 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_e_tog 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_CAP2BUFH F67 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_CAP2BUFL F66 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_get_ir 1D04 0 CODE 0 text21 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_CAP3BUFH F65 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_CAP3BUFL F64 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_power 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_steer 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_lp_timer 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_ofi2_send_lcd 1E0A 0 CODE 0 text39 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_full_speed 1460 0 CODE 0 text15 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+itoa_5@i 37 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+itoa_5@j 36 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+itoa_5@k 35 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_INTCON2bits FF1 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___lwmod@dividend 26 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+i2_e_tog 1EC2 0 CODE 0 text41 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+start_initialization 1E0A 0 CODE 0 cinit dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+get_packet_serial@packet 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_itoa_5 1460 0 CODE 0 text11 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_OSCCON FD3 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_TRISAbits F92 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_PTCON0 F7F 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_PTCON1 F7E 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_PTPERH F7A 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_PTPERL F7B 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_TRISBbits F93 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_TRISCbits F94 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_TRISDbits F95 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+itoa_5@quotient 33 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_QEICON FB6 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_init_counter 1E68 0 CODE 0 text28 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_ofi2_set_line 1D9C 0 CODE 0 text36 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_SPBRGH FB0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__pcstackBANK1 100 0 BANK1 1 cstackBANK1 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+ir_filter@i 31 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_get_packet_serial 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_ofi2_clear_lcd 1E9C 0 CODE 0 text38 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+full_speed@mL 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+full_speed@mR 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+full_speed@direction 31 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+set_line@line 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+set_motor_pwm@m 24 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_init_ir 1D3C 0 CODE 0 text26 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___lwdiv@counter 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_lp_timer 18 0 CODE 0 intcodelo dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__smallconst 300 0 SMALLCONST 0 smallconst C:\Users\SHL4917\AppData\Local\Temp\sh9k.o
+_init_serial 1E9C 0 CODE 0 text23 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+turn_left@mL 32 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+turn_left@mR 34 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_full_speed 152E 0 CODE 0 text15 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+steer@cont 60 0 BANK0 1 cstackBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_lp_timer 46 0 CODE 0 intcodelo dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_INTCONbits FF2 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hinit 4A 0 CODE 0 init dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htemp 4B 0 COMRAM 1 temp dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Linit 46 0 CODE 0 init dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltemp 4A 0 COMRAM 1 temp dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___wmul 1D9C 0 CODE 0 text17 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_hp_rfid 8 0 CODE 0 intcode dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+int$flags 4A 0 COMRAM 1 temp dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__S0 30000E 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__S1 1FC 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__S2 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+get_ir@ir_value 19 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+veer_left@direction 31 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+ir_difference@motorL 18 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+ir_difference@motorR 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_lcd_string 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+int_func 11C4 0 CODE 0 intcode_body dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_get_ir 1CC6 0 CODE 0 text21 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_G_time_ms 87 0 BANK0 1 bssBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_get_char_serial 1EEE 0 CODE 0 text43 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_lcd_out 198A 0 CODE 0 text32 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hramtop 300 0 RAM 0 ramtop dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_itoa_5 1388 0 CODE 0 text11 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+set_motor_pwm@PWMduty 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_send_lcd 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext27 0 0 ABS 0 text27 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext28 0 0 ABS 0 text28 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext29 0 0 ABS 0 text29 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext30 0 0 ABS 0 text30 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext31 0 0 ABS 0 text31 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext32 0 0 ABS 0 text32 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext33 0 0 ABS 0 text33 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext36 0 0 ABS 0 text36 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext37 0 0 ABS 0 text37 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext38 0 0 ABS 0 text38 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext39 0 0 ABS 0 text39 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext40 0 0 ABS 0 text40 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext41 0 0 ABS 0 text41 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext42 0 0 ABS 0 text42 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Htext43 0 0 ABS 0 text43 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+i2send_lcd@Byte 4 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+i2send_lcd@type 3 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_RCSTAbits FAB 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_PIE1bits F9D 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_get_packet_serial 1388 0 CODE 0 text42 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext10 1B46 0 CODE 0 text10 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext11 1388 0 CODE 0 text11 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext12 1AE6 0 CODE 0 text12 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext13 1C44 0 CODE 0 text13 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext14 1BF2 0 CODE 0 text14 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext15 1460 0 CODE 0 text15 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext16 E72 0 CODE 0 text16 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext17 1D9C 0 CODE 0 text17 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext18 1906 0 CODE 0 text18 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext19 1C86 0 CODE 0 text19 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext20 FA6 0 CODE 0 text20 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext21 1CC6 0 CODE 0 text21 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext22 10D0 0 CODE 0 text22 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext23 1E9C 0 CODE 0 text23 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext24 1E2C 0 CODE 0 text24 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext25 16B2 0 CODE 0 text25 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext26 1D04 0 CODE 0 text26 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext27 1ED0 0 CODE 0 text27 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext28 1E4E 0 CODE 0 text28 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext29 1EDC 0 CODE 0 text29 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext30 1E68 0 CODE 0 text30 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext31 1DC2 0 CODE 0 text31 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext32 198A 0 CODE 0 text32 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext33 1EB4 0 CODE 0 text33 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext36 1D6C 0 CODE 0 text36 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext37 1B9C 0 CODE 0 text37 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext38 1E82 0 CODE 0 text38 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext39 1DE6 0 CODE 0 text39 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext40 1A02 0 CODE 0 text40 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext41 1EC2 0 CODE 0 text41 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext42 12AA 0 CODE 0 text42 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext43 1EE6 0 CODE 0 text43 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_ofi2_send_lcd 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___awdiv 1906 0 CODE 0 text18 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_veer_right 152E 0 CODE 0 text2 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+orientate@motorL 64 0 BANK0 1 cstackBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+orientate@motorR 66 0 BANK0 1 cstackBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__pintcode_body 11C4 0 CODE 0 intcode_body dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___lwdiv 1BF2 0 CODE 0 text14 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___lwmod 1C44 0 CODE 0 text13 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_G_rfid_buf 3A 0 COMRAM 1 bssCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_delay_s 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+orientate@cont 62 0 BANK0 1 cstackBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_set_line 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___wmul@multiplier 16 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_ofi2_lcd_out 1A7A 0 CODE 0 text40 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_LATAbits F89 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_LATBbits F8A 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_LATCbits F8B 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_LATDbits F8C 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_ofi2_clear_lcd 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+get_packet_serial@i 4 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_ofi2_lcd_out 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_get_ir 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_G_rfid_retrieved 89 0 BANK0 1 bssBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+main@cont 100 0 BANK1 1 cstackBANK1 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_clear_lcd 1E82 0 CODE 0 text30 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+main@chksm 6F 0 BANK0 1 cstackBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___lwdiv@divisor 28 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_turn_right 17EE 0 CODE 0 text5 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_ofi2_set_line 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_clear_lcd 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_init_button 1EE6 0 CODE 0 text29 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_ir_display 175C 0 CODE 0 text9 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+lcd_out@number 17 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_itoa_5 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_get_char_serial 1EE6 0 CODE 0 text43 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+stackhi 2FF 0 ABS 0 - C:\Users\SHL4917\AppData\Local\Temp\sh9k.o
+stacklo 1FC 0 ABS 0 - C:\Users\SHL4917\AppData\Local\Temp\sh9k.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+i2_lcd_out 1A02 0 CODE 0 text40 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_send_lcd 1DC2 0 CODE 0 text31 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__pbssCOMRAM 39 0 COMRAM 1 bssCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+ir_filter@same_values_flag 30 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_clear_lcd 1E68 0 CODE 0 text30 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+veer_right@mL 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+veer_right@mR 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_PIR1bits F9E 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+i2_lcd_string 1B9C 0 CODE 0 text37 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_turn_left 1906 0 CODE 0 text6 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+ir_filter@sensor 25 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+end_of_initialization 1E1E 0 CODE 0 cinit dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_turn_left 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_init_interrupt 1ED0 0 CODE 0 text27 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_T5CONbits FB7 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_send_lcd 1DE6 0 CODE 0 text31 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+power@temp 23 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+power@i 25 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_RCONbits FD0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___awdiv@quotient 22 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+?___awdiv 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___lwdiv@dividend 26 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_full_speed 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+?___lwdiv 26 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+?___lwmod 26 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+?_ir_filter 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_veer_right 15F0 0 CODE 0 text2 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+ir_difference@cont 16 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_set_line 1D3C 0 CODE 0 text8 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_init_ir 1D04 0 CODE 0 text26 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_ofi2_e_tog 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lramtop 300 0 RAM 0 ramtop dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__pcinit 1E0A 0 CODE 0 cinit dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+ir_filter@filtered_ir 26 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext0 35E 0 CODE 0 text0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext1 D0A 0 CODE 0 text1 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext2 152E 0 CODE 0 text2 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext3 15F0 0 CODE 0 text3 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext4 A66 0 CODE 0 text4 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext5 17EE 0 CODE 0 text5 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext6 187A 0 CODE 0 text6 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext7 1A7A 0 CODE 0 text7 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext8 1D3C 0 CODE 0 text8 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ptext9 175C 0 CODE 0 text9 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_turn_left 187A 0 CODE 0 text6 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext27 0 0 ABS 0 text27 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext28 0 0 ABS 0 text28 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext29 0 0 ABS 0 text29 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext30 0 0 ABS 0 text30 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext31 0 0 ABS 0 text31 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext32 0 0 ABS 0 text32 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext33 0 0 ABS 0 text33 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext36 0 0 ABS 0 text36 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext37 0 0 ABS 0 text37 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext38 0 0 ABS 0 text38 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext39 0 0 ABS 0 text39 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext40 0 0 ABS 0 text40 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext41 0 0 ABS 0 text41 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext42 0 0 ABS 0 text42 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Ltext43 0 0 ABS 0 text43 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_get_packet_serial 12AA 0 CODE 0 text42 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_set_line 1D6C 0 CODE 0 text8 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__ramtop 300 0 RAM 0 ramtop C:\Users\SHL4917\AppData\Local\Temp\sh9k.o
+__end_of_turn_right 187A 0 CODE 0 text5 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+steer@motorL 62 0 BANK0 1 cstackBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+steer@motorR 64 0 BANK0 1 cstackBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+main@motorL 7E 0 BANK0 1 cstackBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+main@motorR 75 0 BANK0 1 cstackBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lpowerup 46 0 CODE 0 powerup dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_CAP3CONbits F61 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_ir_display 17EE 0 CODE 0 text9 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__psmallconst 300 0 SMALLCONST 0 smallconst dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_delay_s 1CC6 0 CODE 0 text19 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_ofi2_lcd_string 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_init_serial 1EB4 0 CODE 0 text23 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+itoa_5@buffer 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of__initialization 1E1E 0 CODE 0 cinit dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_init_interrupt 1EDC 0 CODE 0 text27 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+?_power 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__CFG_OSC$IRCIO 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+turn_right@mL 32 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+turn_right@mR 34 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_get_char_serial 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+send_lcd@Byte 19 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+send_lcd@type 18 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_CAP2CONbits F62 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__pintcodelo 18 0 CODE 0 intcodelo dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_ofi2_lcd_string 1BF2 0 CODE 0 text37 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_TXSTAbits FAC 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_orientate D0A 0 CODE 0 text4 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_set_motor_pwm E72 0 CODE 0 text16 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_orientate 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_main A66 0 CODE 0 text0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__pintcode 8 0 CODE 0 intcode dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+get_ir@sensor 18 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+power@number 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_G_run 39 0 COMRAM 1 bssCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_e_tog 1EC2 0 CODE 0 text33 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_PDC0H F78 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_PDC0L F79 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_PDC1H F76 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_PDC1L F77 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_RCREG FAE 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_SPBRG FAF 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_TMR0L FD6 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_TRISA F92 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_TRISC F94 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_power 1B46 0 CODE 0 text12 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_steer E72 0 CODE 0 text1 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_e_tog 1EB4 0 CODE 0 text33 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_hp_rfid 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_power 1AE6 0 CODE 0 text12 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_steer D0A 0 CODE 0 text1 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+itoa_5@number 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__size_of_init_button 0 0 ABS 0 - dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_orientate A66 0 CODE 0 text4 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_ofi2_e_tog 1ED0 0 CODE 0 text41 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__initialization 1E0A 0 CODE 0 cinit dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__pbssBANK0 87 0 BANK0 1 bssBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+ir_display@cont 60 0 BANK0 1 cstackBANK0 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+___wmul@product 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hsmallconst 35E 0 SMALLCONST 0 smallconst dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+i2_clear_lcd 1E82 0 CODE 0 text38 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__Hintcode E 0 CODE 0 intcode dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+_ir_difference 10D0 0 CODE 0 text22 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+__end_of_veer_left 16B2 0 CODE 0 text3 dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+i2lcd_string@string 5 0 COMRAM 1 cstackCOMRAM dist/default/production\MAIN_PROJ_v15_TRACKING_WORKING.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+intcodelo 0 18 18 32 1
+idloc 0 200000 200000 8 1
+text0 0 35E 35E 1B90 1
+cstackCOMRAM 1 1 1 4A 1
+cstackBANK0 1 60 60 2A 1
+cstackBANK1 1 100 100 FC 1
+reset_vec 0 0 0 4 1
+intcode 0 8 8 6 1
+smallconst 0 300 300 5E 1
+config 0 300000 300000 E 1
