@@ -65,6 +65,18 @@ Improvements for future work:
                }
                
                
-## Program Flow Chart
+## Program Flowchart
+
+### Main Flowchart
 ![alt text](https://github.com/juskek/eod-robot/blob/main/flowchart_main.png?raw=true)
+
+
+### Initial Centering Flowchart
+Method by which the robot locates and determines the general direction of the explosive device.
+![alt text](https://github.com/juskek/eod-robot/blob/main/flowchart_centering.png?raw=true)
+
+
+### Steering Flowchart
+Method by which the robot navigates to the explosive device after the initial direction is found. 
+![alt text](https://github.com/juskek/eod-robot/blob/main/flowchart_steering.png?raw=true)
 
