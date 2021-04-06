@@ -1,5 +1,5 @@
 # eod-robot
-Imperial College London | Mechanical Engineering
+Imperial College London | Mechanical Engineering |
 Embedded Control for Microcontrollers (ECM) 2019-2020 | Explosive Ordinance Disposal Robot
 
 ## Overview
@@ -10,14 +10,14 @@ Compiler: XC8 (v2.00)
 Microchip: PIC18F4331 
 Programmer: PICkit3
 
-School: Imperial College London  
-Department: Mechanical Engineering 
-Module: Embedded C for Microcontrollers
+School: Imperial College London | 
+Department: Mechanical Engineering |
+Module: Embedded C for Microcontrollers |
 Class: MEng Graduating 2021
   
-Instructor: Dr Ravi Vaidyanathan
-Due Date: 10 December 2019
-Last Updated: 9 December 2019 1300
+Instructor: Dr Ravi Vaidyanathan |
+Due Date: 10 December 2019 |
+Last Updated: 9 December 2019 1300 |
 
 
 Description: The given objective was to design code to drive a vehicle 
@@ -39,8 +39,11 @@ Description: The given objective was to design code to drive a vehicle
 
 
 Input: IR sensor signal, RFID signal
+
 Output: RFID information on LCD screen
+
 Main File: main.c
+
 Source Files: functions.c, dc_motor_funct.c, lcd_funct.c
 
 Required Features Not Included: The program adheres to all requirements 
@@ -58,7 +61,7 @@ Improvements for future work:
                conditional while loop to delay only when RFID is not 
                not retrieved. For example:
                
-               '''c
+               
                delay_ms(&G_rfid_retrieved, &G_time_ms, 400);
                void delay_ms(unsigned char *flag, unsigned int *time_ms, 
                   unsigned int delay) 
@@ -66,7 +69,7 @@ Improvements for future work:
                  *time_ms = 0; // reset timer
                  while ((*flag == 0) | (*time_ms < delay));
                }
-               '''
+               
                
                
 ## Program Flowchart
