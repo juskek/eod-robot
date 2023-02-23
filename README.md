@@ -2,6 +2,8 @@
 Imperial College London | Mechanical Engineering |
 Embedded Control for Microcontrollers (ECM) 2019-2020 | Explosive Ordinance Disposal Robot
 
+[Watch Demo](https://youtube.com/shorts/iS_kTXIUcFI?feature=share)
+
 ## Overview
 Authors: Lim Siew Han & Justin Kek
 
